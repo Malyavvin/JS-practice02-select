@@ -1,0 +1,92 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.app {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app .wrap {
+  width: 500px;
+}
+
+.app .wrap .select {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.app .wrap .select.open .select__input {
+  border-bottom: unset;
+}
+
+.app .wrap .select.open .select__dropdown {
+  display: block;
+}
+
+.app .wrap .select.open .select__backdrop {
+  display: block;
+}
+
+.app .wrap .select__input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.app .wrap .select__input span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app .wrap .select__dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app .wrap .select__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app .wrap .select__item {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.app .wrap .select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.app .wrap .select__item.selected {
+  text-decoration: underline;
+  background-color: aqua;
+}
+
+.app .wrap .select__backdrop {
+  display: none;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+
+/*# sourceMappingURL=/style.b1f5e290.css.map */
