@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/plugins/select.js":[function(require,module,exports) {
+})({"src/scripts/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -254,12 +254,8 @@ function _setup2() {
   this.$arrow = this.$el.querySelector('[data-type="arrow"]');
   this.$value = this.$el.querySelector('[data-type="value"]');
 }
-},{}],"src/scripts/index.js":[function(require,module,exports) {
-"use strict";
 
-var _select = require("/src/plugins/select.js");
-
-var select = new _select.Select('#select', {
+var select = new Select('#select', {
   placeholder: 'Выбери элемент',
   data: [{
     id: '1',
@@ -288,7 +284,7 @@ var select = new _select.Select('#select', {
   }
 });
 window.s = select;
-},{"/src/plugins/select.js":"src/plugins/select.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -316,7 +312,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64485" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65513" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
