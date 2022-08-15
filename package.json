@@ -2,9 +2,12 @@
   "name": "js-practice02-select",
   "version": "1.0.0",
   "scripts": {
-    "start" : "parcel index.html",
-    "build" : "parcel build index.html --no-minify"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-minify"
   },
   "author": "malyavvin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
